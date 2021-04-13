@@ -6,10 +6,11 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class ArrList {
 
-    //Вводим лист с клавиатуры
+    //Вводим лист с клавиатуры пок не буддет введено пустое значение и выводим результирующий массив
     public static ArrayList<String> consoleCompletion() throws IOException{
         Reader r = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(r);
@@ -18,24 +19,46 @@ public class ArrList {
 
         while (true){
             String s = reader.readLine();
-            if (s.equals("end")) break;
+            if (s.equals("")) break;
             list.add(s);
         }
 
-        for(int i = 0; i < list.size(); i++){
-            System.out.print(list.get(i) + " ");
+        for(String s : list){
+            System.out.print(s + " ");
+        }
+
+        System.out.println("");
+        return list;
+    }
+
+    //Удаляем нечетные и выводим результирующий массив
+    public static ArrayList<Integer> deleteOdd(ArrayList<Integer> list){
+
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()){
+            Integer i = iterator.next();
+            if(i%2 != 0) iterator.remove();
+        }
+
+        for(Integer i : list){
+            System.out.print(i + " ");
         }
 
         return list;
     }
 
-    //Удаляем нечетные
-    public static ArrayList<Integer> deleteOdd(ArrayList<Integer> list){
+    //Удаляем четные и выводим результирующий массив
+    public static ArrayList<Integer> deleteEven(ArrayList<Integer> list){
 
-        for(int i = 0; i < list.size(); i++){
-            if(list.get(i)%2 == 1){
-                list.remove(i);
-            }
+        Iterator<Integer> iterator = list.iterator();
+
+        while (iterator.hasNext()){
+            Integer i = iterator.next();
+            if(i%2 == 0) iterator.remove();
+        }
+
+        for(Integer i : list){
+            System.out.print(i + " ");
         }
 
         return list;
@@ -43,9 +66,19 @@ public class ArrList {
 
     public static void main(String[] args) throws IOException {
 
-        ArrayList<Integer> listInt =
+        try {
+            ArrayList<String> listString = consoleCompletion();
 
-        deleteOdd();
+            ArrayList<Integer> listInt = new ArrayList<Integer>();
+            for (int i = 0; i < listString.size(); i++) {
+                listInt.add(Integer.parseInt(listString.get(i)));
+            }
+
+            deleteOdd(listInt);
+
+        }catch(NumberFormatException n) {
+            System.out.println("В массиве обнаружены строки, невозможно преобразовать в числа");
+        }
 
     }
 }
