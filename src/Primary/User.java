@@ -1,4 +1,4 @@
-package Tests;
+package Primary;
 
 public class User {
     private String name;

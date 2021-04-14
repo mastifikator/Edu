@@ -1,6 +1,4 @@
-package Cats;
-
-import Cats.Cat;
+package Primary;
 
 public class CatTimeMachine {
 

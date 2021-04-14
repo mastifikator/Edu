@@ -1,4 +1,4 @@
-package Tests;
+package Primary;
 
 public class Jarvis {
     public void sayHi (String...names){

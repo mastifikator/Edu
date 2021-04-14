@@ -1,7 +1,4 @@
-package Cats;
-
-import Cats.Cat;
-import Cats.CatTimeMachine;
+package Primary;
 
 public class Startup {
     static int count = 0;

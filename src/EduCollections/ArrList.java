@@ -1,4 +1,4 @@
-package Arrays;
+package EduCollections;
 
 import java.io.BufferedReader;
 import java.io.IOException;
