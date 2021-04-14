@@ -14,6 +14,7 @@ public class testMaps {
 
         Map<Integer, String> map = new HashMap<Integer, String>();
 
+
         for (int i = 0; i <= 4; i++){
             map.put(intList.get(i), stringList.get(i));
         }
@@ -22,6 +23,13 @@ public class testMaps {
             System.out.println("Ключ: " + m.getKey() + " / " + "Значение: " + m.getValue());
         }
 
+        ArrayList<String> valueList = new ArrayList<>(map.values());
+        Set<Integer> keySet = new HashSet<>(map.keySet());
+        List entryList = new ArrayList(map.entrySet());
+
+        System.out.println("Ключи: " + keySet);
+        System.out.println("Значения: " + valueList);
+        System.out.println("Пары: " + entryList);
 
     }
 }
