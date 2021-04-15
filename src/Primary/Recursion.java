@@ -11,6 +11,8 @@ public class Recursion {
        return recursionFactorial(n-1)*n;
     }
 
+
+
     //Вычисление суммы с помощью рекурсии
     public static  int recursionSum(int n){
 
