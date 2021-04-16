@@ -7,14 +7,24 @@ import java.util.Collections;
 import java.util.List;
 
 public class Test {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        Integer[] i = new Integer[]{2, 5, 7, 2, 3, 1};
-        List<Integer> intArray = Arrays.asList(i);
+            int x = 7;
+            incrementNumber(x);
+            System.out.println(x);
 
-        Collections.sort(intArray, Collections.reverseOrder());
+            Cat cat = new Cat(7);
+            catLevelUp(cat);
+            System.out.println(cat.getAge());
 
-        System.out.println(intArray);
+        }
 
+        public static void catLevelUp(Cat cat) {
+
+            cat.setAge(cat.getAge()+1);
+        }
+
+        public static void incrementNumber(int x) {
+            x++;
     }
 }

@@ -6,9 +6,16 @@ public class Cat {
     static int destroyCount;
     static int createCount;
 
-    public Cat (int age, String name){
+    public void setAge(int age){
         this.age = age;
-        this.name = name;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public Cat (int age){
+        this.age = age;
         createCount++;
         System.out.println("Создан котик " + age + " годиков с именем " + name);
     }

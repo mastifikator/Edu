@@ -4,7 +4,7 @@ public class Startup {
     static int count = 0;
 
     public static void main(String[] args) {
-        Cat barsik = new Cat(3, "Барсик");
+        Cat barsik = new Cat(3);
         count++;
         barsik.jump();
         barsik.meow();
