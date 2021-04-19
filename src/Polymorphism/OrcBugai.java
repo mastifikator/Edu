@@ -1,4 +1,4 @@
-package OOP;
+package Polymorphism;
 
 public class OrcBugai extends OrcFather{
 

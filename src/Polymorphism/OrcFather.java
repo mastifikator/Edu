@@ -1,6 +1,6 @@
-package OOP;
+package Polymorphism;
 
-public class OrcFather {
+public abstract class OrcFather {
 
     public OrcFather(String name, int age) {
         this.name = name;

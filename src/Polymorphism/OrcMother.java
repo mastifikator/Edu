@@ -1,4 +1,4 @@
-package OOP;
+package Polymorphism;
 
 public class OrcMother {
 
@@ -27,16 +27,17 @@ public class OrcMother {
     }
 
     public static void main(String[] args) {
-        OrcMother Kras = new OrcMother("Красавка");
+        OrcMother kras = new OrcMother("Красавка");
 
         OrcRaider raid = new OrcRaider("Райдер", 32);
         OrcBugai bugai = new OrcBugai("Бугай", 28);
         OrcOgr ogr = new OrcOgr("Огр", 35);
 
+
         //А вот тут полиморфизм
-        Kras.orcLove(raid);
-        Kras.orcLove(bugai);
-        Kras.orcLove(ogr);
+        kras.orcLove(bugai);
+        kras.orcLove(raid);
+        kras.orcLove(ogr);
 
     }
 }

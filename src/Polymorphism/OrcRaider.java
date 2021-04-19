@@ -1,4 +1,4 @@
-package OOP;
+package Polymorphism;
 
 public class OrcRaider extends OrcFather{
     public OrcRaider(String name, int age){
