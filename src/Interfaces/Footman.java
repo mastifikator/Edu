@@ -10,10 +10,6 @@ public class Footman extends Humans{
         this.armor = 2;
     }
 
-    @Override
-    public void move(int x, int y) {
-        System.out.println(this.name + " двигается к координатам " + x + " " + y);
-    }
 
     @Override
     public void beat(Units target, int damage) {

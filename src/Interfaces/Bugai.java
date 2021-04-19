@@ -10,12 +10,6 @@ public class Bugai extends Orcs {
         this.armor = 1;
     }
 
-
-    @Override
-    public void move(int x, int y) {
-        System.out.println(this.name + " двигается к координатам " + x + " " + y);
-    }
-
     @Override
     public void beat(Units target, int damage) {
         System.out.println(name + " Нанес " + target.name + " " + Helpers.armorDamage(target.armor, damage));

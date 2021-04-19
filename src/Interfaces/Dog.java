@@ -13,9 +13,4 @@ public class Dog extends Neutrals{
     public void scared() {
         super.scared();
     }
-
-    @Override
-    public void move(int x, int y) {
-        System.out.println(this.name + " двигается к координатам " + x + " " + y);
-    }
 }

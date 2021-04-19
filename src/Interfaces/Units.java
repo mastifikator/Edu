@@ -7,7 +7,5 @@ public abstract class Units {
     protected int damage;
     protected int armor;
 
-
-
-    boolean death;
+    protected boolean death;
 }

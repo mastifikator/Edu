@@ -1,7 +1,11 @@
 package Interfaces;
 
 public interface BattleActions {
-    void beat(Units target, int damage);
+
+    default void beat(Units target, int damage) {
+        System.out.println(" Нанес " + target.name + " " + Helpers.armorDamage(target.armor, damage));
+    }
+
     void cast(Units target, Object spell);
     void battleRoar(String roar);
 }
