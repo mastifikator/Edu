@@ -8,4 +8,5 @@ public abstract class Neutrals extends Units implements UnitsAction {
         Random r = new Random();
         this.move(r.nextInt(), r.nextInt());
     }
+
 }

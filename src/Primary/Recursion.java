@@ -1,4 +1,4 @@
-package Cats;
+package Primary;
 
 public class Recursion {
 
@@ -33,7 +33,7 @@ public class Recursion {
     public static void main(String[] args) {
 
         System.out.println(Recursion.recursionSum(4));
-        System.out.println(Recursion.recursionFactorial(4));
+        System.out.println(Recursion.recursionFactorial(14));
         System.out.println(Recursion.allNumeric(12));
     }
 }
