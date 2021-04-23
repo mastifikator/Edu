@@ -1,4 +1,4 @@
-package Primary;
+package TestSpeedCollections;
 
 import java.util.ArrayList;
 
