@@ -17,7 +17,9 @@ public class Test {
             catLevelUp(cat);
             System.out.println(cat.getAge());
 
+
         }
+
 
         public static void catLevelUp(Cat cat) {
 
