@@ -1,9 +1,13 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Test {
-    static ArrayList<String> arr = new ArrayList<>();
+
 
     public static void main(String[] args) {
-        System.out.println(arr.getClass().getGenericInterfaces());
+        String test = "";
+        Random r = new Random();
+        char c = (char)(r.nextInt(26) + 'a');
+        System.out.println(c);
     }
 }

@@ -11,14 +11,14 @@ public class SpeedArrayList {
         this.array = array;
     }
 
-    public void add(int countOperationsAdd) {
+    public void add(List addedList) {
 
         System.out.printf("\nТестируем скорость операций добавления элементов в %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            AddToList.AddToBegin(countOperationsAdd, array, COLLECTION_TYPE);
-            AddToList.AddToEnd(countOperationsAdd, array, COLLECTION_TYPE);
-            AddToList.AddToMiddle(countOperationsAdd, array, COLLECTION_TYPE);
+            AddToList.AddToBegin(addedList, array, COLLECTION_TYPE);
+            AddToList.AddToEnd(addedList, array, COLLECTION_TYPE);
+            AddToList.AddToMiddle(addedList, array, COLLECTION_TYPE);
     }
 
     public void get(int countOperationsGet) {

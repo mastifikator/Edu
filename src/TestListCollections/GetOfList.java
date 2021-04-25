@@ -6,7 +6,7 @@ public class GetOfList {
 
     public static void GetOfCollection(int countOperationsGet, List array, String COLLECTION_TYPE) {
         List list;
-        String typeVariable;
+        String typeVariable = array.get(0).getClass().getSimpleName();
 
         //Определяем тип List оступившего на вход
         if(array instanceof ArrayList){
@@ -17,17 +17,6 @@ public class GetOfList {
             list = new Vector(array);
         }  else {
             throw new IllegalArgumentException("Введен не поддерживаемый тип List, используйте ArrayList или inkedList");
-        }
-
-        //Определяем тип данных List поступившего на вход
-        if(array.get(0) instanceof String){
-            typeVariable = "String";
-        }else if(array.get(0) instanceof Integer){
-            typeVariable = "Integer";
-        }else if(array.get(0) instanceof Date){
-            typeVariable = "Data";
-        }else {
-            throw new IllegalArgumentException("На вход пришли не поддерживаемые данные проверьте Generic значения");
         }
 
         //Производим операцию получения элементов и замеряем скорость
