@@ -13,6 +13,8 @@ public class RemoveOfList {
             list = new ArrayList(array);
         }else if (array instanceof LinkedList){
             list = new LinkedList(array);
+        } else if (array instanceof Vector){
+            list = new Vector(array);
         } else{
             throw new IllegalArgumentException("Введен не поддерживаемый тип List, используйте ArrayList или inkedList");
         }

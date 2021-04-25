@@ -1,13 +1,14 @@
 package TestListCollections;
 
 import java.util.LinkedList;
+import java.util.Vector;
 
-public class SpeedLinkedList {
+public class SpeedVector {
 
-    private LinkedList array;
-    private final String COLLECTION_TYPE = "LinkedList";
+    private Vector array;
+    private final String COLLECTION_TYPE = "Vector";
 
-    public SpeedLinkedList(LinkedList array) {
+    public SpeedVector(Vector array) {
         this.array = array;
     }
 

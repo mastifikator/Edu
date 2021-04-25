@@ -11,9 +11,9 @@ public class SpeedArrayList {
         this.array = array;
     }
 
-    public void testArrayListAdd(int countOperationsAdd) {
+    public void add(int countOperationsAdd) {
 
-        System.out.println("\nТестируем скорость операций добавления элементов в ArrayList");
+        System.out.printf("\nТестируем скорость операций добавления элементов в %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
             AddToList.AddToBegin(countOperationsAdd, array, COLLECTION_TYPE);
@@ -21,15 +21,15 @@ public class SpeedArrayList {
             AddToList.AddToMiddle(countOperationsAdd, array, COLLECTION_TYPE);
     }
 
-    public void testArrayListGet(int countOperationsGet) {
-        System.out.println("\nТестируем скорость операции получения элементов из ArrayList");
+    public void get(int countOperationsGet) {
+        System.out.printf("\nТестируем скорость операций получения элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
             GetOfList.GetOfCollection(countOperationsGet, array, COLLECTION_TYPE);
     }
 
-    public void testArrayListRemove(int countOperationsRemove) {
-        System.out.println("\nТестируем скорость удаления элементов из ArrayList");
+    public void remove(int countOperationsRemove) {
+        System.out.printf("\nТестируем скорость операций удаления элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
             RemoveOfList.RemoveOfCollection(countOperationsRemove, array, COLLECTION_TYPE);
