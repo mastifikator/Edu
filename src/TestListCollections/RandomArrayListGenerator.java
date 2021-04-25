@@ -1,4 +1,4 @@
-package TestSpeedCollections;
+package TestListCollections;
 
 import java.util.*;
 

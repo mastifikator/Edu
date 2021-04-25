@@ -1,4 +1,4 @@
-package TestSpeedCollections;
+package TestListCollections;
 
 import java.util.*;
 
@@ -16,23 +16,23 @@ public class SpeedArrayList {
         System.out.println("\nТестируем скорость операций добавления элементов в ArrayList");
         System.out.println("--------------------------------------------------");
 
-            AddToCollection.AddToBegin(countOperationsAdd, array, COLLECTION_TYPE);
-            AddToCollection.AddToEnd(countOperationsAdd, array, COLLECTION_TYPE);
-            AddToCollection.AddToMiddle(countOperationsAdd, array, COLLECTION_TYPE);
+            AddToList.AddToBegin(countOperationsAdd, array, COLLECTION_TYPE);
+            AddToList.AddToEnd(countOperationsAdd, array, COLLECTION_TYPE);
+            AddToList.AddToMiddle(countOperationsAdd, array, COLLECTION_TYPE);
     }
 
     public void testArrayListGet(int countOperationsGet) {
         System.out.println("\nТестируем скорость операции получения элементов из ArrayList");
         System.out.println("--------------------------------------------------");
 
-            GetOfCollection.GetOfCollection(countOperationsGet, array, COLLECTION_TYPE);
+            GetOfList.GetOfCollection(countOperationsGet, array, COLLECTION_TYPE);
     }
 
     public void testArrayListRemove(int countOperationsRemove) {
         System.out.println("\nТестируем скорость удаления элементов из ArrayList");
         System.out.println("--------------------------------------------------");
 
-            RemoveOfCollection.RemoveOfCollection(countOperationsRemove, array, COLLECTION_TYPE);
+            RemoveOfList.RemoveOfCollection(countOperationsRemove, array, COLLECTION_TYPE);
         }
 
     }
