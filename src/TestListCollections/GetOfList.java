@@ -4,7 +4,7 @@ import java.util.*;
 public class GetOfList {
     static String outPrint = "В %s было %d элементов %s, %s %d, осталось %d, заняло %o нс \n";
 
-    public static void GetOfCollection(int countOperationsGet, List array, String COLLECTION_TYPE) {
+    public static void get(int countOperationsGet, List array, String COLLECTION_TYPE) {
         List list;
         String typeVariable = array.get(0).getClass().getSimpleName();
 

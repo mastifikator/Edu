@@ -4,7 +4,7 @@ import java.util.*;
 public class RemoveOfList {
     static String outPrint = "В %s было %d элементов %s, %s %d, осталось %d, заняло %o нс \n";
 
-    public static void RemoveOfCollection(int countOperationsRemove, List array, String COLLECTION_TYPE) {
+    public static void remove(int countOperationsRemove, List array, String COLLECTION_TYPE) {
         List list;
         String typeVariable = array.get(0).getClass().getSimpleName();
 

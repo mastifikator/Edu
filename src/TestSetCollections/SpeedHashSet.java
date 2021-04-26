@@ -1,39 +1,37 @@
-package TestListCollections;
+package TestSetCollections;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-public class SpeedLinkedList {
+public class SpeedHashSet {
 
-    private LinkedList array;
-    private final String COLLECTION_TYPE = "LinkedList";
+    private HashSet hashSet;
+    private final String COLLECTION_TYPE = "HashSet";
 
-    public SpeedLinkedList(LinkedList array) {
-        this.array = array;
+    public SpeedHashSet(HashSet hashSet) {
+        this.hashSet = hashSet;
     }
 
-    public void add(List addedList) {
+    public void add(Set addedSet) {
 
         System.out.printf("\nТестируем скорость операций добавления элементов в %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            AddToList.addToBegin(addedList, array, COLLECTION_TYPE);
-            AddToList.addToEnd(addedList, array, COLLECTION_TYPE);
-            AddToList.addToMiddle(addedList, array, COLLECTION_TYPE);
+            AddToSet.add(addedSet, hashSet, COLLECTION_TYPE);
     }
 
     public void get(int countOperationsGet) {
         System.out.printf("\nТестируем скорость операций получения элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            GetOfList.get(countOperationsGet, array, COLLECTION_TYPE);
+            GetOfSet.get(countOperationsGet, hashSet, COLLECTION_TYPE);
     }
 
     public void remove(int countOperationsRemove) {
         System.out.printf("\nТестируем скорость операций удаления элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            RemoveOfList.remove(countOperationsRemove, array, COLLECTION_TYPE);
+            RemoveOfSet.remove(countOperationsRemove, hashSet, COLLECTION_TYPE);
         }
 
     }

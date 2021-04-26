@@ -6,7 +6,7 @@ import java.util.*;
 public class AddToList {
     static String outPrint = "В %s было %d элементов %s, %s %d, осталось %d, заняло %o нс \n";
 
-    public static void AddToBegin(List addedList, List array, String COLLECTION_TYPE) {
+    public static void addToBegin(List addedList, List array, String COLLECTION_TYPE) {
         List list;
         String typeVariable = array.get(0).getClass().getSimpleName();
 
@@ -33,7 +33,7 @@ public class AddToList {
         System.out.printf(outPrint, COLLECTION_TYPE, startElements, typeVariable, nameOperation, addedList.size(), list.size(), finish - start);
     }
 
-    public static void AddToEnd(List addedList, List array, String COLLECTION_TYPE) {
+    public static void addToEnd(List addedList, List array, String COLLECTION_TYPE) {
         List list;
         String typeVariable = array.get(0).getClass().getSimpleName();
 
@@ -60,7 +60,7 @@ public class AddToList {
         System.out.printf(outPrint, COLLECTION_TYPE, startElements, typeVariable, nameOperation, addedList.size(), list.size(), finish - start);
     }
 
-    public static void AddToMiddle(List addedList, List array, String COLLECTION_TYPE) {
+    public static void addToMiddle(List addedList, List array, String COLLECTION_TYPE) {
         List list;
         List randomArray;
         String typeVariable = array.get(0).getClass().getSimpleName();

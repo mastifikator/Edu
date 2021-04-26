@@ -1,39 +1,37 @@
-package TestListCollections;
+package TestSetCollections;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
-public class SpeedLinkedList {
+public class SpeedLinkedHashSet {
 
-    private LinkedList array;
-    private final String COLLECTION_TYPE = "LinkedList";
+    private LinkedHashSet linkedHashSet;
+    private final String COLLECTION_TYPE = "LinkedHashSet";
 
-    public SpeedLinkedList(LinkedList array) {
-        this.array = array;
+    public SpeedLinkedHashSet(LinkedHashSet linkedHashSet) {
+        this.linkedHashSet = linkedHashSet;
     }
 
-    public void add(List addedList) {
+    public void add(Set addedSet) {
 
         System.out.printf("\nТестируем скорость операций добавления элементов в %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            AddToList.addToBegin(addedList, array, COLLECTION_TYPE);
-            AddToList.addToEnd(addedList, array, COLLECTION_TYPE);
-            AddToList.addToMiddle(addedList, array, COLLECTION_TYPE);
+            AddToSet.add(addedSet, linkedHashSet, COLLECTION_TYPE);
     }
 
     public void get(int countOperationsGet) {
         System.out.printf("\nТестируем скорость операций получения элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            GetOfList.get(countOperationsGet, array, COLLECTION_TYPE);
+            GetOfSet.get(countOperationsGet, linkedHashSet, COLLECTION_TYPE);
     }
 
     public void remove(int countOperationsRemove) {
         System.out.printf("\nТестируем скорость операций удаления элементов из %s \n", COLLECTION_TYPE);
         System.out.println("--------------------------------------------------");
 
-            RemoveOfList.remove(countOperationsRemove, array, COLLECTION_TYPE);
+            RemoveOfSet.remove(countOperationsRemove, linkedHashSet, COLLECTION_TYPE);
         }
-
     }

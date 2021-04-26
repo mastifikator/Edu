@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.Vector;
 
-public class Main {
+public class MainList {
 
     public static void main(String[] args) {
         //Создаем рандомные входные данные разных типов для всех наследников List с помощью RandomArrayListGenerator
@@ -32,7 +32,7 @@ public class Main {
         SpeedLinkedList testLinked = new SpeedLinkedList(objectLinked);
         SpeedVector testVector = new SpeedVector(objectVector);
 
-        //Для теста на добавление необходимо подавать на вход сгенерированный List (или свой)
+        //Для теста на добавление необходимо подавать на вход сгенерированный List с помощью Randomizer (или свой)
         testArray.add(RandomArrayListGenerator.giveMeTestObject(10000));
         testLinked.add(RandomArrayListGenerator.giveMeTestObject(10000));
         testVector.add(RandomArrayListGenerator.giveMeTestObject(10000));
