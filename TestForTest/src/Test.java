@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 public class Test {
 
@@ -17,8 +14,7 @@ public class Test {
         hset.add("7777");
         Iterator iter = hset.iterator();
 
-        for(int i = 0; i < 5; i++){
-            System.out.println(iter.next());
+        Map map = new Map() {
         }
 
     }
