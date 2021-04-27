@@ -14,8 +14,5 @@ public class Test {
         hset.add("7777");
         Iterator iter = hset.iterator();
 
-        Map map = new Map() {
-        }
-
     }
 }
