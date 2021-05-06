@@ -16,12 +16,12 @@ public class Main {
         Set<Human> humanSet = new TreeSet<>(humanStrengthComparator.thenComparing(new HumanSpeedComparator().thenComparing(new HumanNameComparator())));
         Map<String, Human> humanMap = new TreeMap<>();
 
-        humanList.sort(humanStrengthComparator);
         humanList.add(human1);
         humanList.add(human2);
         humanList.add(human3);
         humanList.add(human4);
         humanList.add(human5);
+        humanList.sort(humanStrengthComparator);
 
         humanSet.add(human1);
         humanSet.add(human2);
@@ -44,6 +44,7 @@ public class Main {
         orcList.add(orc3);
         orcList.add(orc4);
         orcList.add(orc5);
+        orcList.sort(Orc::compareTo);
 
         orcSet.add(orc1);
         orcSet.add(orc2);
@@ -57,7 +58,6 @@ public class Main {
         orcMap.put("orc4", orc4);
         orcMap.put("orc5", orc5);
 
-        orcList.sort(Orc::compareTo);
         System.out.println("Выводим List орков " + orcList.size());
         for (Orc orc : orcList){
             System.out.println(orc.toString());
