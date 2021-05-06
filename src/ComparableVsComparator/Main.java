@@ -14,7 +14,6 @@ public class Main {
         List<Human> humanList = new ArrayList<>();
         Comparator humanStrengthComparator = new HumanStrengthComparator();
         Set<Human> humanSet = new TreeSet<>(humanStrengthComparator.thenComparing(new HumanSpeedComparator().thenComparing(new HumanNameComparator())));
-        Map<String, Human> humanMap = new TreeMap<>();
 
         humanList.add(human1);
         humanList.add(human2);
@@ -37,7 +36,6 @@ public class Main {
 
         List<Orc> orcList = new ArrayList<>();
         Set<Orc> orcSet = new TreeSet<>();
-        Map<String, Orc> orcMap = new TreeMap<>();
 
         orcList.add(orc1);
         orcList.add(orc2);
@@ -51,12 +49,6 @@ public class Main {
         orcSet.add(orc3);
         orcSet.add(orc4);
         orcSet.add(orc5);
-
-        orcMap.put("orc1", orc1);
-        orcMap.put("orc2", orc2);
-        orcMap.put("orc3", orc3);
-        orcMap.put("orc4", orc4);
-        orcMap.put("orc5", orc5);
 
         System.out.println("Выводим List орков " + orcList.size());
         for (Orc orc : orcList){
@@ -79,9 +71,17 @@ public class Main {
             System.out.println(human.toString());
         }
 
+        Comparator humanOrcMapComparator = new HumanOrcMapComparator();
+        Map<Human, Orc> orcHumanMap = new TreeMap<>(humanOrcMapComparator);
+        orcHumanMap.put(human1, orc1);
+        orcHumanMap.put(human2, orc2);
+        orcHumanMap.put(human3, orc3);
+        orcHumanMap.put(human4, orc4);
+        orcHumanMap.put(human5, orc5);
 
-        System.out.println("Выводим Map орков " + orcList.size());
-        for (Map.Entry<String, Orc> entry : orcMap.entrySet()){
+
+        System.out.println("Выводим Map людей и орков " + orcList.size());
+        for (Map.Entry<Human, Orc> entry : orcHumanMap.entrySet()){
             System.out.println("key:" + entry.getKey() + "\n" + "value:" + entry.getValue());
         }
 
