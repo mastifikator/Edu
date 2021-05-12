@@ -1,0 +1,11 @@
+CREATE TABLE Orcs (orcId MEDIUMINT NOT NULL AUTO_INCREMENT, name VARCHAR (30) NOT NULL, strength DOUBLE, speed DOUBLE, PRIMARY KEY (orcId));
+INSERT INTO Orcs (name, strength, speed) VALUES ('Roman', 32.0, 22.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Niko', 12.0, 22.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Stanislav', 13.0, 3.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Igor', 6.0, 15.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Jena', 9.0, 12.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Michail', 3.0, 5.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Volodya', 24.0, 21.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Petr', 16.0, 10.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Bill', 14.0, 5.0);
+INSERT INTO Orcs (name, strength, speed) VALUES ('Jhon', 1.0, 3.0);
