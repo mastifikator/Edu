@@ -7,4 +7,5 @@ public enum OrcWarriors {
     OFFICER,
     KODO,
     CHIEF;
+
 }

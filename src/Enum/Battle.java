@@ -1,7 +1,9 @@
 package Enum;
 
+
 public class Battle {
     public static void main(String[] args) {
+
         OrcBarracks orcBarracks = new OrcBarracks();
         orcBarracks.setOrcWarriors(OrcWarriors.BUGAI);
 

@@ -6,11 +6,22 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Test {
+
+    public static void main(String[] args) throws Exception{
+
+        StringBuilder stringBuilder = new StringBuilder("dggds");
+
+        String a = "";
+
+    }
+
     static int b;
     static String c;
     public class TestSerial implements Serializable {
 
-
+        {
+            System.out.println(b);
+        }
 
         private void writeObject(ObjectOutputStream out){
             synchronized(Test.class){};
@@ -24,17 +35,4 @@ public class Test {
 
     }
 
-
-
-    public static void main(String[] args) throws Exception{
-
-        Object obj = new Object();
-        Integer b;
-        System.out.println(c);
-
-
-
-
-
-     }
 }
