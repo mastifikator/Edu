@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.nio.Buffer;
 import java.sql.*;
 
-public class BlobExamole {
+public class BlobExample {
     public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
         String url = "jdbc:mysql://localhost:3306/orc_base";
         String userName = "root";
