@@ -34,7 +34,10 @@ public class Test {
         Thread t = new Thread();
 
         ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();
-        System.out.println(l.size());
+        long a = 345L;
+        long b = 345L;
+
+        System.out.println(345L == 345L);
 
     }
 
