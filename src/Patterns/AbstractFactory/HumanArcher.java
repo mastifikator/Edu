@@ -18,6 +18,6 @@ public class HumanArcher extends Unit implements Archer {
 
     @Override
     public void rangeFight() {
-        System.out.println("Стрелок стреляет из ружья");
+        System.out.println("Стрелок стреляет из ружь");
     }
 }
