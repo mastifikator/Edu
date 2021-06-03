@@ -14,8 +14,8 @@ public class King {
     String[] objectsConstruction = new String[]{"Кузницу", "Замок", "Школу", "Таверну", "Фонтаны"};
     String[] actionsConstruction = new String[]{"Построить", "Снести", "Отремонтировать", "Перенести", "Расширить"};
 
-    String[] objectsCourt = new String[]{"Преступника", "Заговорщика", "Козла", "Трактирщика", "Должника"};
-    String[] actionsCourt = new String[]{"Казнить", "Помиловать", "Выгнать", "Оштрафовать", "Наградить"};
+    String[] objectsCourt = new String[]{"Преступника", "Заговорщика", "Козла", "Трактирщика", "Должника", "Желтую Уточку"};
+    String[] actionsCourt = new String[]{"Казнить", "Помиловать", "Выгнать", "Оштрафовать", "Наградить", "Посадить"};
 
     String[] objectsPrivate = new String[]{"Дочку", "Торт", "Музыкантов", "Аквадискотеку", "Вензеля"};
     String[] actionsPrivate = new String[]{"Достать", "Принести", "Купить", "Накормить", "Почесать"};
@@ -24,7 +24,7 @@ public class King {
     public Order giveTheOrder(){
         orderList = new ArrayList<>();
         orderList.add(new ConstructionOrder(objectsConstruction[random(5)], actionsConstruction[random(5)]));
-        orderList.add(new CourtOrder(objectsCourt[random(5)], actionsCourt[random(5)]));
+        orderList.add(new CourtOrder(objectsCourt[random(6)], actionsCourt[random(6)]));
         orderList.add(new PrivateOrder(objectsPrivate[random(5)], actionsPrivate[random(5)]));
 
         return orderList.get(random(3));
