@@ -3,7 +3,7 @@ package Patterns.AbstractFactory;
 public class OrcMage extends Unit implements Mage {
 
     public OrcMage(){
-        System.out.println("Шаман");
+        System.out.println("Шаман рожден");
     }
 
     @Override

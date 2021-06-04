@@ -3,7 +3,7 @@ package Patterns.AbstractFactory;
 public class HumanMage extends Unit implements Mage {
 
     public HumanMage(){
-        System.out.println("Зачарователь");
+        System.out.println("Зачарователь рожден");
     }
 
     @Override
