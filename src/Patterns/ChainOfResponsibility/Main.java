@@ -22,6 +22,7 @@ public class Main {
         for(User u : userList){
             //Вот тут реализована цепочка обязанностей
             User userAuthorized = new CheckAuthorization(new CheckBlock(new CheckLocation(u).check()).check()).check();
+            System.out.println();
         }
     }
 }

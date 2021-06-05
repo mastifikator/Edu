@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class OrcMage extends Unit implements Mage {
+public class OrcMage extends Unit implements IMage {
 
     public OrcMage(){
         System.out.println("Шаман рожден");

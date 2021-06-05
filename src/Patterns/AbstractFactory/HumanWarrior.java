@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class HumanWarrior extends Unit implements Warrior {
+public class HumanWarrior extends Unit implements IWarrior {
 
     public HumanWarrior(){
         System.out.println("Футмэн рожден");

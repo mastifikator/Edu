@@ -1,8 +1,8 @@
 package Patterns.AbstractFactory;
 
 public class Main {
-    public static AbstractUnitFactory raceCreate(RaceType type){
-        AbstractUnitFactory factory = null;
+    public static IAbstractUnitFactory raceCreate(RaceType type){
+        IAbstractUnitFactory factory = null;
 
         switch (type){
             case UNDEAD:

@@ -3,7 +3,6 @@ package Patterns.FactoryMethod;
 public class Human extends Unit {
 
     public Human(){
-        System.out.println("Человек рожден");
     }
 
     @Override

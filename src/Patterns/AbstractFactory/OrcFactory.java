@@ -1,18 +1,18 @@
 package Patterns.AbstractFactory;
 
-public class OrcFactory implements AbstractUnitFactory {
+public class OrcFactory implements IAbstractUnitFactory {
     @Override
-    public Warrior createWarrior() {
+    public IWarrior createWarrior() {
         return new OrcWarrior();
     }
 
     @Override
-    public Archer createArcher() {
+    public IArcher createArcher() {
         return new OrcArcher();
     }
 
     @Override
-    public Mage createMage() {
+    public IMage createMage() {
         return new OrcMage();
     }
 }

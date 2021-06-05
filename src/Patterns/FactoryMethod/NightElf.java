@@ -2,7 +2,6 @@ package Patterns.FactoryMethod;
 
 public class NightElf extends Unit {
     public NightElf(){
-        System.out.println("Ночной эльф рожден");
     }
 
     @Override

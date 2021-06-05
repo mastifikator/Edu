@@ -29,11 +29,6 @@ public abstract class Unit {
         this.health = health;
     }
 
-    public void dealDamage(Unit unitAttacker, Unit unitAttacked){
-        DamageMediator damageMediator = new DamageMediator(unitAttacker, unitAttacked);
-        battleRoar(unitAttacked.getName());
-    }
-
     public abstract void battleRoar(String nameAttacked);
 
     public abstract void dead();

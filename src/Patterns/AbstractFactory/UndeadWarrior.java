@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class UndeadWarrior extends Unit implements Warrior {
+public class UndeadWarrior extends Unit implements IWarrior {
 
     public UndeadWarrior(){
         System.out.println("Гуль рожден");

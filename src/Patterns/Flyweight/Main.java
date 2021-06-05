@@ -1,6 +1,5 @@
 package Patterns.Flyweight;
 
-
 import java.awt.*;
 
 public class Main {

@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class HumanMage extends Unit implements Mage {
+public class HumanMage extends Unit implements IMage {
 
     public HumanMage(){
         System.out.println("Зачарователь рожден");

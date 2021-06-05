@@ -8,13 +8,20 @@ public class Main {
 
         //Клерк является хранителем объектов команд, организуя очередь
         clerk.writeOrder(king.giveTheOrder());
+        System.out.println();
         clerk.writeOrder(king.giveTheOrder());
+        System.out.println();
         clerk.writeOrder(king.giveTheOrder());
+        System.out.println();
         clerk.writeOrder(king.giveTheOrder());
+        System.out.println();
         clerk.writeOrder(king.giveTheOrder());
+        System.out.println();
         clerk.deleteLastOrder();
+        System.out.println();
         clerk.deleteLastOrder();
 
+        //Тут стэк опустошается
         System.out.println();
         clerk.announceOrders();
 

@@ -8,7 +8,6 @@ public class Soldier extends Squad{
         this.name = name;
     }
 
-
     public int getStrength() {
         return strength;
     }
@@ -28,5 +27,10 @@ public class Soldier extends Squad{
     @Override
     public int getPower() {
         return strength;
+    }
+
+    @Override
+    public String getType() {
+        return "Солдат";
     }
 }

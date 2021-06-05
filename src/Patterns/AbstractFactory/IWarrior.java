@@ -1,5 +1,5 @@
 package Patterns.AbstractFactory;
 
-public interface Warrior {
+public interface IWarrior {
     void meleeFight();
 }

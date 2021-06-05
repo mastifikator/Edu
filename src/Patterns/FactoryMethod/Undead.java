@@ -2,12 +2,11 @@ package Patterns.FactoryMethod;
 
 public class Undead extends Unit {
     public Undead(){
-        System.out.println("Нежить рожден");
     }
 
     @Override
     public void deadUnit() {
-        System.out.println("Нежить погибает");
+        System.out.println("Нежить не умирает, а отправляется к господину!");
     }
 
     @Override

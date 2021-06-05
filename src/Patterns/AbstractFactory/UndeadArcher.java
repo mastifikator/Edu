@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class UndeadArcher extends Unit implements Archer {
+public class UndeadArcher extends Unit implements IArcher {
 
     public UndeadArcher(){
         System.out.println("Адепт рожден");

@@ -1,10 +1,10 @@
 package Patterns.Decorator;
 
-public class OrcWrapper extends Orc{
+public class OrcPowerArmor extends Orc{
 
     private Orc orcOriginal;
 
-    public OrcWrapper(Orc orc) {
+    public OrcPowerArmor(Orc orc) {
 
         super(orc.getName());
         this.orcOriginal = orc;
@@ -12,7 +12,7 @@ public class OrcWrapper extends Orc{
 
     @Override
     public String getName() {
-        return orcOriginal.getName() + " из обертки";
+        return orcOriginal.getName() + " Ad victoriam! ";
     }
 
     @Override
@@ -22,7 +22,7 @@ public class OrcWrapper extends Orc{
 
     @Override
     public int getPower() {
-        return orcOriginal.getPower() + 3;
+        return orcOriginal.getPower() + 150;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class OrcWrapper extends Orc{
 
     @Override
     public int getSpeed() {
-        return orcOriginal.getSpeed() + 3;
+        return orcOriginal.getSpeed() + 100;
     }
 
     @Override

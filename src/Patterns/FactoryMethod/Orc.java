@@ -2,7 +2,6 @@ package Patterns.FactoryMethod;
 
 public class Orc extends Unit {
     public Orc(){
-        System.out.println("Орк рожден");
     }
 
     @Override

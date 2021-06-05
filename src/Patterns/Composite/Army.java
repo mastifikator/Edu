@@ -15,10 +15,6 @@ public class Army implements IMilitary{
     public Army() {
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -31,6 +27,15 @@ public class Army implements IMilitary{
         return squads.add(squad);
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getType() {
+        return "Армия";
+    }
 
     @Override
     public int getPower() {

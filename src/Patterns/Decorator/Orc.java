@@ -2,8 +2,8 @@ package Patterns.Decorator;
 
 public class Orc {
     private String name;
-    private int power;
-    private int speed;
+    private int power = 5;
+    private int speed = 5;
 
     public Orc(String name) {
         this.name = name;

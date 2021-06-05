@@ -28,4 +28,14 @@ public class MilitaryEquipment implements IMilitary{
     public int getPower() {
         return strength;
     }
+
+    @Override
+    public String getName() {
+        return title;
+    }
+
+    @Override
+    public String getType() {
+        return "Экипировка";
+    }
 }

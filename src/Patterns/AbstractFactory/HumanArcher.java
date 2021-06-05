@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class HumanArcher extends Unit implements Archer {
+public class HumanArcher extends Unit implements IArcher {
 
     public HumanArcher(){
         System.out.println("Стрелок рожден");

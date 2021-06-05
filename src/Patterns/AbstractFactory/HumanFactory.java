@@ -1,18 +1,18 @@
 package Patterns.AbstractFactory;
 
-public class HumanFactory implements AbstractUnitFactory {
+public class HumanFactory implements IAbstractUnitFactory {
     @Override
-    public Warrior createWarrior() {
+    public IWarrior createWarrior() {
         return new HumanWarrior();
     }
 
     @Override
-    public Archer createArcher() {
+    public IArcher createArcher() {
         return new HumanArcher();
     }
 
     @Override
-    public Mage createMage() {
+    public IMage createMage() {
         return new HumanMage();
     }
 }

@@ -1,6 +1,6 @@
 package Patterns.AbstractFactory;
 
-public class UndeadMage extends Unit implements Mage {
+public class UndeadMage extends Unit implements IMage {
 
     public UndeadMage(){
         System.out.println("Банши рождена");

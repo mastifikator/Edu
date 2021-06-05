@@ -16,7 +16,6 @@ public class Squad extends Army{
     }
 
     public Squad() {
-        this.name = "";
     }
 
     public String getName() {
@@ -32,6 +31,11 @@ public class Squad extends Army{
     }
 
     @Override
+    public String getType() {
+        return "Отряд";
+    }
+
+    @Override
     public int getPower() {
         for(Soldier s : soldiers){
             strength += s.getStrength();
@@ -39,4 +43,5 @@ public class Squad extends Army{
 
         return strength;
     }
+
 }

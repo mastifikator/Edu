@@ -1,5 +1,5 @@
 package Patterns.AbstractFactory;
 
-public interface Archer {
+public interface IArcher {
     public void rangeFight();
 }
